@@ -1,0 +1,32 @@
+{
+  "name": "flux-lumines-demos",
+  "version": "1.0.0",
+  "description": "Few nice Lumines demos showing the capabilites of Flux and React.js",
+  "scripts": {
+    "default": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base ./default/ --config ./default/webpack.js --progress --colors --port 9090 --hot --inline"
+  },
+  "keywords": [
+    "react",
+    "flux",
+    "lumines"
+  ],
+  "author": "Tobiáš Potoček",
+  "email": "tobiaspotocek@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.13.1",
+    "flux-lumines": "tobice/flux-lumines"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^2.0.0",
+    "babel": "^4.0.1",
+    "babel-core": "^4.0.1",
+    "babel-loader": "^4.0.0",
+    "css-loader": "^0.12.0",
+    "less-loader": "^2.2.0",
+    "react-hot-loader": "^1.2.5",
+    "style-loader": "^0.12.1",
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.8.0"
+  }
+}
