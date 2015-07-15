@@ -1,53 +1,43 @@
 import Lumines from 'flux-lumines';
-import {RESTART} from 'flux-lumines/src/game/actions.js'
 import styles from '../styles.css'
 
+const mountpoint = document.getElementById('lumines');
 let lumines;
-let recording = false;
 let history;
 let timeout;
 
-function resetLumines() {
-    if (lumines) {
-        lumines.stop();
-    }
-    lumines = new Lumines(document.getElementById('lumines'));
-    lumines.register(action => {
-        if (recording) {
-            history.push({
-                time: performance.now(),
-                action: action
-            });
-        }
-    });
-}
-
-function dispatch(i) {
-    const action = history[i].action;
-    lumines.dispatch(action.action, action.payload);
-    lumines.render();
-
-    if (history[i + 1]) {
-        const delay = history[i + 1].time - history[i].time;
-        timeout = setTimeout(() => dispatch(i + 1), delay);
-    }
-}
-
 document.getElementById("record").onclick = () => {
     clearTimeout(timeout);
-    recording = true;
     history = [];
-    resetLumines();
+
+    lumines = new Lumines(mountpoint);
+    lumines.register(action => {
+        history.push({
+            time: performance.now(),
+            action: action
+        });
+    });
     lumines.start();
 };
 
 document.getElementById("replay").onclick = () => {
-    recording = false;
-    resetLumines();
+    if (lumines) {
+        lumines.stop();
+    }
+    lumines = new Lumines(mountpoint);
+
+    function dispatch(i) {
+        const action = history[i].action;
+        lumines.dispatch(action.action, action.payload);
+        lumines.render();
+
+        if (history[i + 1]) {
+            const delay = history[i + 1].time - history[i].time;
+            timeout = setTimeout(() => dispatch(i + 1), delay);
+        }
+    }
 
     if (history) {
         dispatch(0);
     }
 };
-
-
