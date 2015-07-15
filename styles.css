@@ -1,0 +1,7 @@
+body {
+    background-color: #313131;
+    font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+}
+#lumines {
+    width: 90%; margin: 0 auto;
+}
