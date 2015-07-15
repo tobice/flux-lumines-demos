@@ -1,5 +1,4 @@
 # flux-lumines-demos
---------------------
 
 Some demos based on the [Lumines](https://github.com/tobice/flux-lumines) game written in 
 JavaScript using **React.js**, **Flux** and **Immutable.js**.
