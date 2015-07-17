@@ -17,3 +17,11 @@ Record the game while playing and then replay it back. This demo shows how easy 
 achieve with the Flux pattern.
 
 Run `npm run recording` to launch the demo.
+
+### [save-state](./save-state) 
+The game state is automatically saved to the Web Storage when you pause the game. If you 
+reload the page (or access it from another window/tab), the state is loaded and you can 
+continue the game. As the whole game state is one global immutable object, this is also 
+super easy to implement.
+
+Run `npm run save-state` to launch the demo.

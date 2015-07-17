@@ -4,7 +4,8 @@
   "description": "Few nice Lumines demos showing the capabilites of Flux and React.js",
   "scripts": {
     "default": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base ./default/ --config ./default/webpack.js --progress --colors --port 9090 --hot --inline",
-    "recording": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base ./recording/ --config ./recording/webpack.js --progress --colors --port 9090 --hot --inline"
+    "recording": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base ./recording/ --config ./recording/webpack.js --progress --colors --port 9090 --hot --inline",
+    "save-state": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base ./save-state/ --config ./save-state/webpack.js --progress --colors --port 9090 --hot --inline"
   },
   "keywords": [
     "react",
