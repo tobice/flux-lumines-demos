@@ -25,3 +25,11 @@ continue the game. As the whole game state is one global immutable object, this 
 super easy to implement.
 
 Run `npm run save-state` to launch the demo.
+
+### [share-state](./share-state) 
+Share the same state across multiple instances of the game. One instance of the game is pushing
+(*"broadcasting"*) the game state to the local web store making it available for other instances 
+that can consequently *mirror* the game play of the original instance. The instances can run in 
+separated tabs or windows of the same web browser.
+
+Run `npm run share-state` to launch the demo.

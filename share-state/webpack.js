@@ -1,0 +1,1 @@
+module.exports = require('../webpack')(__dirname + '/shareState.js');
