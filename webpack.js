@@ -7,8 +7,14 @@ module.exports = function (entry) {
             loaders: [
                 {test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader']},
                 {test: /\.css$/, exclude: /node_modules/, loader: 'style!css'},
-                {test: /node_modules\/flux-lumines\/((?!node_modules).)*\.js$/, loaders: ['react-hot', 'babel-loader']},
-                {test: /node_modules\/flux-lumines\/((?!node_modules).)*\.less$/, loader: 'style!css!autoprefixer-loader!less'}
+                {
+                    test: /node_modules\/flux-lumines\/((?!node_modules).)*\.js$/,
+                    loaders: ['react-hot', 'babel-loader']
+                },
+                {
+                    test: /node_modules\/flux-lumines\/((?!node_modules).)*\.less$/,
+                    loader: 'style!css!autoprefixer-loader!less'
+                }
             ]
         },
         output: {

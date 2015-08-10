@@ -2,3 +2,4 @@
 node_modules
 flux-lumines.iml
 npm-debug.log
+build/*
