@@ -1,6 +1,4 @@
 import Lumines from 'flux-lumines';
-import {PAUSE, RESTART} from 'flux-lumines/src/game/actions.js';
-import {PAUSED} from 'flux-lumines/src/game/gameStates.js';
 import styles from '../styles.css';
 
 const socketUrl = 'ws://localhost:9091';

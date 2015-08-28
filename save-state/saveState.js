@@ -1,7 +1,8 @@
 import Lumines from 'flux-lumines';
-import {PAUSE, RESTART} from 'flux-lumines/src/game/actions.js';
-import {PAUSED} from 'flux-lumines/src/game/gameStates.js';
 import styles from '../styles.css';
+
+const {PAUSE, RESTART} = Lumines.actions;
+const {PAUSED} = Lumines.gameStates;
 
 window.onerror = () => {
     // Lumines can't quite handle corrupted state. It somehow expects that the
