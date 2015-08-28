@@ -47,6 +47,11 @@ up to date with the broadcasting instance. When a new client connects to the soc
 first receive the current complete global state from the server instance and then it will start 
 listening to the incoming actions.
 
+More detailed description can be found
+[here](https://github.com/tobice/flux-lumines/wiki/Making-of-Lumines#bonus-demo-running-lumines-on-the-server).
+I also made a recording of this demo which you can find on 
+[YouTube](https://www.youtube.com/watch?v=C4sE17kK2iM).
+
 Running this demo is slightly more complicated. First, you need to build Lumines as a library 
 that can be used in Node.js:
 
