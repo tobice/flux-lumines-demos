@@ -1,4 +1,4 @@
-var loaders = require('./../webpack')('').module.loaders;
+var loaders = require('./base')('').module.loaders;
 
 module.exports = {
     entry: __dirname + '/../node_modules/flux-lumines/src/Lumines.js',

@@ -1,1 +1,1 @@
-module.exports = require('../webpack')(__dirname + '/shareState.js');
+module.exports = require('../webpack/base')(__dirname + '/shareState.js');

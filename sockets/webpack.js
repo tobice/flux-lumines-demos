@@ -1,1 +1,1 @@
-module.exports = require('../webpack')(__dirname + '/socketsClient.js');
+module.exports = require('../webpack/base')(__dirname + '/socketsClient.js');

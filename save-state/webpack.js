@@ -1,1 +1,1 @@
-module.exports = require('../webpack')(__dirname + '/saveState.js');
+module.exports = require('../webpack/base')(__dirname + '/saveState.js');

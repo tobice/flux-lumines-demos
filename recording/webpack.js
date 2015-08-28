@@ -1,1 +1,1 @@
-module.exports = require('../webpack')(__dirname + '/recording.js');
+module.exports = require('../webpack/base')(__dirname + '/recording.js');

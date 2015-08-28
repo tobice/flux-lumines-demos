@@ -1,1 +1,1 @@
-module.exports = require('../webpack')(__dirname + '/default.js');
+module.exports = require('../webpack/base')(__dirname + '/default.js');
